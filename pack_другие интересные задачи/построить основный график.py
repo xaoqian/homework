@@ -1,6 +1,4 @@
-Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32
-Type "copyright", "credits" or "license()" for more information.
->>> import turtle
+import turtle
 turtle.forward(100)
 turtle.right(60)
 turtle.forward(100)
