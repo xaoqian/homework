@@ -1,15 +1,17 @@
-SYMBOLS = {'}': '{', ']': '[', ')': '(', '>': '<'}
-SYMBOLS_L, SYMBOLS_R = SYMBOLS.values(), SYMBOLS.keys()
-
-def check(s):
-    arr = []
-    for c in s:
-        if c in SYMBOLS_L:
-            arr.append(c)
-        elif c in SYMBOLS_R:
-            if arr and arr[-1] == SYMBOLS[c]:
-                arr.pop()
-            else:
-                return False
-
-    return True
+parentheses = {"(": ")", "{": "}", "[": "]"}
+star = []
+f = input("введите скопки:")
+def determine():
+    if f in parentheses:
+        if f == "(" or "(" or "[" or "{":
+            print('validity')
+            for i in star:
+                star.append(i)
+                print(star)
+        elif f == "[)" or "({[)]" or "{{{":
+            print('error')
+        else:
+            print('неизвестно')
+    else:
+        print('неизвестно')
+determine()
